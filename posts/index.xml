@@ -19,5 +19,78 @@
       <description>Steps to remove the OBS virtual device on Mac.</description>
     </item>
     
+    <item>
+      <title>My Unbound DNS custom options</title>
+      <link>https://d4n3sh.github.io/thedaneshproject.com/posts/my-unbound-dns-custom-options/</link>
+      <pubDate>Sat, 12 Dec 2020 04:55:57 +0000</pubDate>
+      
+      <guid>https://d4n3sh.github.io/thedaneshproject.com/posts/my-unbound-dns-custom-options/</guid>
+      <description>I’m running Unbound DNS on OPNsense at home. This covers my local PLEX server and DOH (DNS OVER HTTPs) setup. All my devices point to my PiHole server which then forwards them to the unbound server.
+server: private-domain: &#34;plex.direct&#34; server: forward-zone: name: &#34;.&#34; forward-addr: 1.1.1.1@853 forward-addr: 1.0.0.1@853 forward-addr: 8.8.8.8@853 forward-addr: 8.8.4.4@853 forward-addr: 2606:4700:4700::1111@853 forward-addr: 2606:4700:4700::1001@853 forward-addr: 2001:4860:4860::8888@853 forward-addr: 2001:4860:4860::8844@853 forward-ssl-upstream: yes  </description>
+    </item>
+    
+    <item>
+      <title>Installing KIND on Ubuntu 20.10</title>
+      <link>https://d4n3sh.github.io/thedaneshproject.com/posts/installing-kind-on-ubuntu-20-10/</link>
+      <pubDate>Wed, 11 Nov 2020 02:19:36 +0000</pubDate>
+      
+      <guid>https://d4n3sh.github.io/thedaneshproject.com/posts/installing-kind-on-ubuntu-20-10/</guid>
+      <description>KIND == Kubernetes in Docker
+I will install the KIND binary into my ~/bin/ directory since that’s where I keep all my binaries.
+_ cd ~/.bin _ curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.9.0/kind-linux-amd64 % Total % Received % Xferd Average Speed Time Time Time Current Dload Upload Total Spent Left Speed 100 97 100 97 0 0 163 0 --:--:-- --:--:-- --:--:-- 162 100 642 100 642 0 0 831 0 --:--:-- --:--:-- --:--:-- 831 100 7247k 100 7247k 0 0 4742k 0 0:00:01 0:00:01 --:--:-- 18.</description>
+    </item>
+    
+    <item>
+      <title>Install Helm on Ubuntu 20.10</title>
+      <link>https://d4n3sh.github.io/thedaneshproject.com/posts/install-helm-on-ubuntu-20-10/</link>
+      <pubDate>Sun, 08 Nov 2020 02:00:00 +0000</pubDate>
+      
+      <guid>https://d4n3sh.github.io/thedaneshproject.com/posts/install-helm-on-ubuntu-20-10/</guid>
+      <description>Go to the release page to get the download link for the latest version of helm. https://github.com/helm/helm/releases
+I prefer the binaries to be in my ~/.bin/ directory as it is already in my PATH
+&amp;gt;_ cd ~/.bin &amp;gt;_ wget https://get.helm.sh/helm-v3.4.0-linux-amd64.tar.gz --2020-11-06 19:41:28-- https://get.helm.sh/helm-v3.4.0-linux-amd64.tar.gz Resolving get.helm.sh (get.helm.sh)… 152.195.19.97, 2606:2800:11f:1cb7:261b:1f9c:2074:3c Connecting to get.helm.sh (get.helm.sh)|152.195.19.97|:443… connected. HTTP request sent, awaiting response… 200 OK Length: 13315267 (13M) &amp;#91;application/x-tar] Saving to: ‘helm-v3.4.0-linux-amd64.tar.gz’ helm-v3.4.0-linux-amd64.tar.gz 100%&amp;#91;======================================================&amp;gt;] 12.70M 77.</description>
+    </item>
+    
+    <item>
+      <title>Install minikube on Ubuntu 20.10</title>
+      <link>https://d4n3sh.github.io/thedaneshproject.com/posts/install-minikube-on-ubuntu-20-10/</link>
+      <pubDate>Sat, 07 Nov 2020 00:33:25 +0000</pubDate>
+      
+      <guid>https://d4n3sh.github.io/thedaneshproject.com/posts/install-minikube-on-ubuntu-20-10/</guid>
+      <description>I’m installing minikube on my shiny new Pop!OS 20.10 install which is based on Ubuntu 20.10.
+_lsb_release -a No LSB modules are available. Distributor ID: Pop Description: Pop!_OS 20.10 Release: 20.10 Codename: groovy I prefer to have my standalone application binaries placed in ~/.bin/ which is already included in my PATH.
+&amp;gt;_ cd ~/.bin &amp;gt;_ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 % Total % Received % Xferd Average Speed Time Time Time Current Dload Upload Total Spent Left Speed 100 53.</description>
+    </item>
+    
+    <item>
+      <title>Start docker after NFS mounts come online</title>
+      <link>https://d4n3sh.github.io/thedaneshproject.com/posts/start-docker-after-nfs-mounts-come-online/</link>
+      <pubDate>Tue, 01 Sep 2020 02:28:16 +0000</pubDate>
+      
+      <guid>https://d4n3sh.github.io/thedaneshproject.com/posts/start-docker-after-nfs-mounts-come-online/</guid>
+      <description>Problem   Some of my docker containers access resources from a NAS over NFS.  On reboot, the Docker service comes up before the NFS paths are mounted, this causes the services within my containers to fail.  Restating the docker service, systemctl restart docker fixes this but I&amp;#8217;d rather the containers come up properly the first time.  Solution   Add a systemd drop-in unit for the docker service instructing it to wait for the NFS mount to come online before starting.</description>
+    </item>
+    
+    <item>
+      <title>nss: /usr/lib/p11-kit-trust.so exists in filesystem</title>
+      <link>https://d4n3sh.github.io/thedaneshproject.com/posts/nss-usr-lib-p11-kit-trust-so-exists-in-filesystem/</link>
+      <pubDate>Thu, 23 Apr 2020 10:18:20 +0000</pubDate>
+      
+      <guid>https://d4n3sh.github.io/thedaneshproject.com/posts/nss-usr-lib-p11-kit-trust-so-exists-in-filesystem/</guid>
+      <description>My Arch update broke today with the following error which was due to a missing soname entry in the older nss packages.
+The error was identified and a post describing the error with a fix was posted to the ArchLinux news feed. Read Here
+? sudo pacman -Syu ..... ..... (201/201) checking for file conflicts &amp;#91;------------------------------------------------------------] 100% error: failed to commit transaction (conflicting files) nss: /usr/lib/p11-kit-trust.so exists in filesystem lib32-nss: /usr/lib32/p11-kit-trust.</description>
+    </item>
+    
+    <item>
+      <title>Change BASH shell to FISH shell</title>
+      <link>https://d4n3sh.github.io/thedaneshproject.com/posts/change-bash-shell-to-fish-shell/</link>
+      <pubDate>Mon, 20 Apr 2020 10:25:59 +0000</pubDate>
+      
+      <guid>https://d4n3sh.github.io/thedaneshproject.com/posts/change-bash-shell-to-fish-shell/</guid>
+      <description>I used the change shell command chsh to change the default shell environment for my id from BASH to the FISH shell.
+- &amp;#91;danesh.manoharan@workstation ~]$ chsh Changing shell for danesh.manoharan. New shell &amp;#91;/bin/bash]: /usr/bin/fish Password: Shell changed. _ chsh -s /usr/bin/fish Changing shell for danesh.manoharan. chsh: Shell changed.  </description>
+    </item>
+    
   </channel>
 </rss>
