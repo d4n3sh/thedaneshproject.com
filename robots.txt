@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://d4n3sh.github.io/thedaneshproject.com/sitemap.xml
