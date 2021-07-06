@@ -25,8 +25,7 @@
       <pubDate>Sat, 12 Dec 2020 04:55:57 +0000</pubDate>
       
       <guid>https://d4n3sh.github.io/thedaneshproject.com/posts/my-unbound-dns-custom-options/</guid>
-      <description>I’m running Unbound DNS on OPNsense at home. This covers my local PLEX server and DOH (DNS OVER HTTPs) setup. All my devices point to my PiHole server which then forwards them to the unbound server.
-server: private-domain: &#34;plex.direct&#34; server: forward-zone: name: &#34;.&#34; forward-addr: 1.1.1.1@853 forward-addr: 1.0.0.1@853 forward-addr: 8.8.8.8@853 forward-addr: 8.8.4.4@853 forward-addr: 2606:4700:4700::1111@853 forward-addr: 2606:4700:4700::1001@853 forward-addr: 2001:4860:4860::8888@853 forward-addr: 2001:4860:4860::8844@853 forward-ssl-upstream: yes  </description>
+      <description>OPNsense + Unbound DNS + DNS Over HTTPS</description>
     </item>
     
     <item>
