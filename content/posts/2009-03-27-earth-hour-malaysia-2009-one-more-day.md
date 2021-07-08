@@ -1,0 +1,23 @@
+---
+title: Earth Hour Malaysia 2009, One more day!!
+author: Danesh
+type: post
+date: 2009-03-27T03:29:16+00:00
+url: /posts/earth-hour-malaysia-2009-one-more-day/
+robotsmeta:
+  - index,follow
+pvc_views:
+  - 3875
+dsq_thread_id:
+  - 891468438
+
+---
+<img loading="lazy" class="alignnone size-medium wp-image-1327" title="malaysia-earth-hour-2009" src="https://thedaneshproject.com/wp-content/uploads/2009/03/malaysia-earth-hour-2009-500x279.png" alt="malaysia-earth-hour-2009" width="500" height="279" srcset="https://thedaneshproject.com/wp-content/uploads/2009/03/malaysia-earth-hour-2009-500x279.png 500w, https://thedaneshproject.com/wp-content/uploads/2009/03/malaysia-earth-hour-2009.png 678w" sizes="(max-width: 500px) 100vw, 500px" />
+
+[Earth Hour Malaysia 2009][1] is one day away.
+
+Mother earth has a fever and it&#8217;s been going up, not sure how much longer she&#8217;ll last. We are the aibiotics but somehow forgotten our purpose. It&#8217;s time to step up and own up to our purpose on planet earth.
+
+Start with Earth Hour&#8230;
+
+ [1]: https://thedaneshproject.com/posts/earth-hour-malaysia-2009-turn-your-lights-off/
